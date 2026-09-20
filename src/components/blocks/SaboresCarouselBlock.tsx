@@ -142,7 +142,7 @@ export const SaboresCarouselBlock: React.FC<SaboresCarouselBlockProps> = ({
       <div className="absolute top-0 bottom-0 right-0 w-[min(40vw,500px)] bg-[url('/images/eagle-tint.png')] bg-left-center bg-no-repeat bg-cover opacity-70 pointer-events-none z-0" />
 
       {/* Header Controls */}
-      <div className="text-center z-10 px-4 relative">
+      <div className="text-center z-[999] px-4 relative">
         <p className="font-script text-[clamp(15px,1.55vw,22px)] tracking-[0.2em] text-white/90 border-b border-white/40 pb-2 inline-block">
           {eyebrow}
         </p>
