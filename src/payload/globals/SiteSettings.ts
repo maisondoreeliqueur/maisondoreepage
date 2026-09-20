@@ -32,6 +32,16 @@ export const SiteSettingsGlobal: GlobalConfig = {
       label: 'Favicon URL de respaldo',
     },
     {
+      name: 'whatsappUrl',
+      type: 'text',
+      defaultValue: 'https://wa.me/593999999999',
+      label: 'Enlace de WhatsApp (Botón Flotante)',
+      admin: {
+        description:
+          'Enlace de WhatsApp para el botón flotante de acceso rápido (ej. https://wa.me/593999999999 o +593999999999). Si se deja vacío, el botón flotante no se mostrará.',
+      },
+    },
+    {
       name: 'enableAgeGate',
       type: 'checkbox',
       defaultValue: true,

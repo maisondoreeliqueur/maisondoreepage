@@ -13,6 +13,7 @@ import configPromise from '@payload-config'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { AgeGateModal } from '@/components/AgeGateModal'
+import { WhatsAppButton } from '@/components/WhatsAppButton'
 import { seed } from '@/payload/seed'
 import { getMediaUrl } from '@/lib/media'
 import './globals.css'
@@ -138,6 +139,7 @@ export default async function RootLayout({
         <Header data={headerData ? (headerData as any) : undefined} />
         <main className="flex-grow">{children}</main>
         <Footer data={footerData ? (footerData as any) : undefined} />
+        <WhatsAppButton url={siteSettingsData?.whatsappUrl} />
       </body>
     </html>
   )

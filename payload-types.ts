@@ -794,6 +794,10 @@ export interface SiteSetting {
   favicon?: (number | null) | Media;
   faviconUrl?: string | null;
   /**
+   * Enlace de WhatsApp para el botón flotante de acceso rápido (ej. https://wa.me/593999999999 o +593999999999). Si se deja vacío, el botón flotante no se mostrará.
+   */
+  whatsappUrl?: string | null;
+  /**
    * Muestra un popup al ingresar requiriendo confirmación de mayoría de edad.
    */
   enableAgeGate?: boolean | null;
@@ -873,6 +877,7 @@ export interface SiteSettingsSelect<T extends boolean = true> {
   siteDescription?: T;
   favicon?: T;
   faviconUrl?: T;
+  whatsappUrl?: T;
   enableAgeGate?: T;
   ageGateTitle?: T;
   ageGateMessage?: T;

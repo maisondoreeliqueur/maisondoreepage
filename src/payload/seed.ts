@@ -92,6 +92,7 @@ export async function seed() {
           siteTitle: 'Maison Dorée — Ecuadorian & French cream licor',
           siteDescription: 'Uniendo una tradición familiar desde 1862.',
           faviconUrl: '/favicon.ico',
+          whatsappUrl: 'https://wa.me/593999999999',
           enableAgeGate: true,
           ageGateTitle: 'BIENVENIDO A MAISON DORÉE',
           ageGateMessage:
