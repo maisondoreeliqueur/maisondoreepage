@@ -67,12 +67,15 @@ export const AgeGateModal: React.FC<AgeGateModalProps> = ({
       aria-labelledby="age-gate-title"
       className="fixed inset-0 z-[9999] flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-300"
     >
-      <div className="relative w-full max-w-lg bg-gradient-to-b from-[#3a0805] via-[#240403] to-[#190202] border border-[#f6efe1]/30 rounded-2xl shadow-2xl p-6 sm:p-10 text-center overflow-hidden">
+      <div
+        style={{ fontFamily: 'var(--font-sans), "Montserrat", sans-serif' }}
+        className="relative w-full max-w-lg font-sans bg-gradient-to-b from-[#3a0805] via-[#240403] to-[#190202] border border-[#f6efe1]/30 rounded-2xl shadow-2xl p-6 sm:p-10 text-center overflow-hidden"
+      >
         {/* Background Pattern */}
-        <div
+        {/* <div
           className="absolute inset-0 bg-eagle-pattern opacity-30 pointer-events-none"
           aria-hidden="true"
-        />
+        /> */}
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center">
@@ -87,9 +90,9 @@ export const AgeGateModal: React.FC<AgeGateModalProps> = ({
             />
           </div>
 
-          <p className="font-script text-amber-200/90 text-sm sm:text-base tracking-[0.2em] uppercase mb-2">
+          {/* <p className="font-script text-amber-200/90 text-sm sm:text-base tracking-[0.2em] uppercase mb-2">
             Verificación de Edad
-          </p>
+          </p> */}
 
           <h2
             id="age-gate-title"
@@ -100,7 +103,7 @@ export const AgeGateModal: React.FC<AgeGateModalProps> = ({
 
           <div className="w-20 h-[1px] bg-white/30 mb-5" />
 
-          <p className="font-serif text-sm sm:text-base text-white/90 leading-relaxed mb-8 max-w-md">
+          <p className="font-sans text-sm sm:text-base text-white/90 leading-relaxed mb-8 max-w-md">
             {message}
           </p>
 
@@ -109,7 +112,8 @@ export const AgeGateModal: React.FC<AgeGateModalProps> = ({
             <button
               type="button"
               onClick={handleConfirm}
-              className="btn-outline w-full max-w-xs font-script text-lg sm:text-xl py-3 px-6 rounded-full cursor-pointer bg-white/10 hover:bg-white/20 border-white/80 text-white shadow-lg transition-all duration-200 active:scale-95"
+              style={{ fontFamily: 'var(--font-sans), "Montserrat", sans-serif' }}
+              className="btn-outline w-full max-w-xs !font-sans text-lg sm:text-xl py-3 px-6 rounded-full cursor-pointer bg-white/10 hover:bg-white/20 border-white/80 text-white shadow-lg transition-all duration-200 active:scale-95"
             >
               {confirmText}
             </button>
@@ -117,6 +121,7 @@ export const AgeGateModal: React.FC<AgeGateModalProps> = ({
             <button
               type="button"
               onClick={handleReject}
+              style={{ fontFamily: 'var(--font-sans), "Montserrat", sans-serif' }}
               className="text-xs sm:text-sm font-sans tracking-[0.08em] uppercase text-white/60 hover:text-white/95 underline-offset-4 hover:underline cursor-pointer transition-colors py-2"
             >
               {rejectText}

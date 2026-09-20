@@ -128,6 +128,7 @@ export const Footer: React.FC<FooterProps> = ({ data }) => {
               href={item.url}
               aria-label={item.platform}
               className="w-18 h-18 grid place-items-center  rounded-full  transition-all"
+              target="_blank"
             >
               {renderSocialIcon(item.platform)}
             </a>

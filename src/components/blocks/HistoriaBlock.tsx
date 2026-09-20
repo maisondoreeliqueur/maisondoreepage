@@ -49,7 +49,7 @@ export const HistoriaBlock: React.FC<HistoriaBlockProps> = ({
 
       {/* Right Vertical Rotated Wordmark */}
       <div className="absolute right-0 mr-[20px] xl:right-2 top-0 bottom-0 w-20 xl:w-24 z-0 hidden lg:flex items-center justify-center pointer-events-none select-none">
-        <div className="relative w-[480px] h-[140px] -rotate-90 shrink-0 opacity-75">
+        <div className="relative w-[480px] h-[140px] -rotate-90 shrink-0">
           <Image
             src="/images/wordmark-tint.png"
             alt=""
@@ -95,7 +95,7 @@ export const HistoriaBlock: React.FC<HistoriaBlockProps> = ({
 
         {/* Media Image Column */}
         <div className="md:col-span-5 lg:col-span-5 flex justify-center items-center">
-          <div className="relative w-full max-w-[460px] h-[280px] sm:h-[330px] border-4 md:border-[5px] border-white/90 shadow-2xl shadow-black/70 rounded-sm overflow-hidden">
+          <div className="relative w-full max-w-[460px] h-[280px] sm:h-[330px]  shadow-2xl shadow-black/70 rounded-sm overflow-hidden">
             <Image
               src={resolvedMediaImage}
               alt="Bienvenidos a Manabí"
