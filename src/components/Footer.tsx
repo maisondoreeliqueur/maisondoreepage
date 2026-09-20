@@ -116,7 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ data }) => {
               {link.label}
             </Link>
           ))} */}
-          <p className="font-script text-lg md:text-2xl text-white hover:text-amber-200 transition-colors">
+          <p className="font-sans text-lg md:text-2xl text-white hover:text-amber-200 transition-colors">
             Contactanos
           </p>
         </div>
