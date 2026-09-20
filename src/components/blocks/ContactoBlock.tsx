@@ -86,7 +86,7 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
         )}
 
         {sub && (
-          <p className="font-serif text-[clamp(14px,1.4vw,19px)] text-white/90 mb-[clamp(32px,4.5vw,48px)]">
+          <p className="font-sans text-[clamp(14px,1.4vw,19px)] text-white/90 mb-[clamp(32px,4.5vw,48px)]">
             {sub}
           </p>
         )}
@@ -120,7 +120,7 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
                 required
                 autoComplete="name"
                 placeholder="Tu nombre completo"
-                className="font-serif text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
+                className="font-sans text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
               />
             </label>
 
@@ -133,7 +133,7 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
                 name="Empresa"
                 autoComplete="organization"
                 placeholder="Nombre de tu empresa"
-                className="font-serif text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
+                className="font-sans text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
               />
             </label>
 
@@ -147,7 +147,7 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
                 required
                 autoComplete="address-level2"
                 placeholder="Ej. Guayaquil, Quito, Cuenca..."
-                className="font-serif text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
+                className="font-sans text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
               />
             </label>
 
@@ -161,7 +161,7 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
                 required
                 autoComplete="tel"
                 placeholder="+593 99 999 9999"
-                className="font-serif text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
+                className="font-sans text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
               />
             </label>
 
@@ -175,7 +175,7 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
                 required
                 autoComplete="email"
                 placeholder="tu@email.com"
-                className="font-serif text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
+                className="font-sans text-[15px] text-white bg-[#f6efe1]/[0.06] border border-[#f6efe1]/50 rounded-[2px] px-3.5 py-3 outline-none transition-colors duration-200 placeholder:text-[#f6efe1]/45 focus:border-[#f6efe1]/95 focus:bg-[#f6efe1]/10"
               />
             </label>
           </div>

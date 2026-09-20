@@ -161,8 +161,8 @@ export const SaboresCarouselBlock: React.FC<SaboresCarouselBlockProps> = ({
             </svg>
           </button>
 
-          <div className="w-[min(76vw,940px)] text-center shrink-0">
-            <h2 className="font-display text-[clamp(30px,6vw,84px)] font-normal text-white leading-none whitespace-nowrap transition-all duration-300">
+          <div className="w-[min(63vw,940px)] text-center shrink-0">
+            <h2 className="min-h-[60px] break-word font-display text-[clamp(30px,6vw,84px)] font-normal text-white leading-none  transition-all duration-300">
               {currentFlavor.name}
             </h2>
           </div>
