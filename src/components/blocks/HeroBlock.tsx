@@ -9,6 +9,7 @@ export interface HeroBlockProps {
   subtitle?: string
   ctaLabel?: string
   ctaUrl?: string
+  video?: any
   videoSrc?: string
   posterImage?: any
   posterUrl?: string
@@ -21,6 +22,7 @@ export const HeroBlock: React.FC<HeroBlockProps> = ({
   subtitle = 'Prueba sus diferentes sabores.',
   ctaLabel = 'COMPRA AHORA',
   ctaUrl = 'https://wa.me/593985504731',
+  video,
   videoSrc = '/video/hero.mp4',
   posterImage,
   posterUrl = '/images/hero.png',
@@ -32,6 +34,12 @@ export const HeroBlock: React.FC<HeroBlockProps> = ({
   const [isMuted, setIsMuted] = useState(true)
   const [isPaused, setIsPaused] = useState(false)
   const [hasVideoError, setHasVideoError] = useState(false)
+
+  // Use video upload, or fallback to videoSrc
+  const effectiveVideo =
+    getMediaUrl(video) ||
+    (typeof videoSrc === 'string' && videoSrc ? videoSrc : '') ||
+    '/video/hero.mp4'
 
   // Use posterImage upload, or fallback to posterUrl or heroImage
   const effectivePoster =
@@ -57,9 +65,6 @@ export const HeroBlock: React.FC<HeroBlockProps> = ({
     typeof ctaUrl === 'string' && ctaUrl
       ? ctaUrl
       : 'https://wa.me/593985504731'
-
-  const safeVideoSrc =
-    typeof videoSrc === 'string' && videoSrc ? videoSrc : '/video/hero.mp4'
 
   // Performance Optimization: IntersectionObserver to pause background video when not in viewport
   useEffect(() => {
@@ -124,7 +129,7 @@ export const HeroBlock: React.FC<HeroBlockProps> = ({
         <video
           ref={videoRef}
           id="hero-video"
-          src={safeVideoSrc}
+          src={effectiveVideo}
           poster={effectivePoster}
           autoPlay
           loop

@@ -270,6 +270,7 @@ export interface HeroBlock {
   subtitle?: string | null;
   ctaLabel?: string | null;
   ctaUrl?: string | null;
+  video?: (number | null) | Media;
   videoSrc?: string | null;
   posterImage?: (number | null) | Media;
   posterUrl?: string | null;
@@ -588,6 +589,7 @@ export interface HeroBlockSelect<T extends boolean = true> {
   subtitle?: T;
   ctaLabel?: T;
   ctaUrl?: T;
+  video?: T;
   videoSrc?: T;
   posterImage?: T;
   posterUrl?: T;

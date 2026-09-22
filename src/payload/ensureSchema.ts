@@ -25,9 +25,12 @@ export async function ensureDbSchema(): Promise<void> {
     await client.query(`
       ALTER TABLE IF EXISTS "site_settings" 
       ADD COLUMN IF NOT EXISTS "whatsapp_url" varchar DEFAULT 'https://wa.me/593999999999';
+
+      ALTER TABLE IF EXISTS "pages_blocks_hero_block" 
+      ADD COLUMN IF NOT EXISTS "video_id" integer REFERENCES "media"("id") ON DELETE SET NULL;
     `)
     hasRun = true
-    console.log('[ensureDbSchema] Verified database schema for site_settings (whatsapp_url)')
+    console.log('[ensureDbSchema] Verified database schema for site_settings and pages_blocks_hero_block')
   } catch (err: any) {
     console.error('[ensureDbSchema] Note on schema check:', err?.message || err)
   } finally {

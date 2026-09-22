@@ -26,7 +26,14 @@ export const HeroBlock: Block = {
       defaultValue: 'https://wa.me/593985504731',
     },
     {
+      name: 'video',
+      label: 'Video (Upload from Media Library)',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
       name: 'videoSrc',
+      label: 'Video URL (Fallback)',
       type: 'text',
       defaultValue: '/video/hero.mp4',
     },
