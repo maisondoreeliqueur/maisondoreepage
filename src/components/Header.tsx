@@ -140,7 +140,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
 
         {/* Mobile Menu Dropdown */}
         {isOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-[#390604] shadow-2xl py-6 flex flex-col items-center gap-4 text-white font-script text-lg md:text-xl tracking-wider text-center border-t border-white/10">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-[#390604] shadow-2xl py-6 flex flex-col items-center gap-4 text-white font-sans text-lg md:text-xl tracking-wider text-center border-t border-white/10">
             {navLinksLeft.concat(navLinksRight).map((link, idx) => (
               <Link
                 key={idx}
