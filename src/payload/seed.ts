@@ -1,5 +1,6 @@
 import { getPayload } from 'payload'
 import configPromise from '@payload-config'
+import { ensureDbSchema } from './ensureSchema'
 
 let isSeeding = false
 
@@ -11,6 +12,7 @@ export async function seed() {
   isSeeding = true
 
   try {
+    await ensureDbSchema()
     const payload = await getPayload({ config: configPromise })
 
     console.log('Seeding Payload CMS data...')

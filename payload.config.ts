@@ -15,6 +15,8 @@ import { HeaderGlobal } from './src/payload/globals/Header'
 import { FooterGlobal } from './src/payload/globals/Footer'
 import { SiteSettingsGlobal } from './src/payload/globals/SiteSettings'
 
+import { ensureDbSchema } from './src/payload/ensureSchema'
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -24,6 +26,11 @@ const postgresUrl =
   (process.env.DATABASE_URI && process.env.DATABASE_URI.startsWith('postgres')
     ? process.env.DATABASE_URI
     : undefined)
+
+// Ensure schema is updated for Postgres in production
+if (postgresUrl) {
+  void ensureDbSchema()
+}
 
 export default buildConfig({
   plugins: [

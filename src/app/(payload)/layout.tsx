@@ -2,6 +2,7 @@ import configPromise from '@payload-config'
 import { handleServerFunctions, RootLayout } from '@payloadcms/next/layouts'
 import React from 'react'
 import { importMap } from './admin/importMap'
+import { ensureDbSchema } from '@/payload/ensureSchema'
 import '@payloadcms/next/css'
 
 type Args = {
@@ -17,10 +18,13 @@ const serverFunction = async (args: any) => {
   })
 }
 
-const Layout = ({ children }: Args) => (
-  <RootLayout config={configPromise} importMap={importMap} serverFunction={serverFunction}>
-    {children}
-  </RootLayout>
-)
+const Layout = async ({ children }: Args) => {
+  await ensureDbSchema()
+  return (
+    <RootLayout config={configPromise} importMap={importMap} serverFunction={serverFunction}>
+      {children}
+    </RootLayout>
+  )
+}
 
 export default Layout

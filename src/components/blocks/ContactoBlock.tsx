@@ -66,11 +66,11 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
       className="relative bg-[#240403] overflow-hidden pt-[clamp(56px,8vw,100px)] pb-0"
     >
       {/* Pattern background */}
-      <div
+      {/* <div
         className="absolute inset-0 bg-eagle-pattern opacity-40 pointer-events-none z-0"
         style={{ backgroundPosition: '0px 49px' }}
         aria-hidden="true"
-      />
+      /> */}
 
       <div className="relative z-10 max-w-[760px] mx-auto px-[clamp(24px,5vw,60px)] text-center">
         {eyebrow && (

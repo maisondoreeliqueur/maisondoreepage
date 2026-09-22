@@ -14,6 +14,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { AgeGateModal } from '@/components/AgeGateModal'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
+import { ensureDbSchema } from '@/payload/ensureSchema'
 import { seed } from '@/payload/seed'
 import { getMediaUrl } from '@/lib/media'
 import './globals.css'
@@ -105,6 +106,7 @@ export default async function RootLayout({
   let siteSettingsData: any = null
 
   try {
+    await ensureDbSchema()
     const payload = await getPayload({ config: configPromise })
 
     const users = await payload.find({ collection: 'users' })
