@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
     >
       <nav className="w-full max-w-[1320px] mx-auto flex items-center justify-between relative">
         {/* Left Nav Links (Desktop) */}
-        <ul className="hidden lg:flex items-center gap-8 text-[17px] md:text-[20px] font-script tracking-wider text-white">
+        <ul className="hidden lg:flex items-center gap-8 text-[17px] md:text-[17px] font-sans tracking-wider text-white">
           {navLinksLeft.map((link, idx) => (
             <li key={idx}>
               <Link
@@ -98,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
         </Link>
 
         {/* Right Nav Links (Desktop) */}
-        <ul className="hidden lg:flex items-center gap-8 text-[17px] md:text-[20px] font-script tracking-wider text-white">
+        <ul className="hidden lg:flex items-center gap-8 text-[17px] md:text-[17px] font-sans tracking-wider text-white">
           {navLinksRight.map((link, idx) => (
             <li key={idx}>
               <Link

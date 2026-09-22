@@ -72,23 +72,23 @@ export const HistoriaBlock: React.FC<HistoriaBlockProps> = ({
               className="object-contain"
             />
           </div>
-          <p className="font-script text-base sm:text-xl md:text-2xl text-white/90 mb-6">
+          <p className="font-sans text-base sm:text-xl md:text-2xl text-white/90 mb-6">
             {scriptText}
           </p>
 
-          <p className="font-serif text-sm sm:text-base md:text-lg text-white leading-relaxed mb-4 max-w-xl mx-auto">
+          <p className="font-sans text-sm sm:text-base md:text-lg text-white leading-relaxed mb-4 max-w-xl mx-auto">
             {paragraph1}
           </p>
 
-          <p className="font-serif text-sm sm:text-base md:text-lg text-white leading-relaxed mb-4 max-w-xl mx-auto whitespace-pre-line">
+          <p className="font-sans text-sm sm:text-base md:text-lg text-white leading-relaxed mb-4 max-w-xl mx-auto whitespace-pre-line">
             {paragraph2}
           </p>
 
-          <p className="font-serif text-2xl sm:text-3xl md:text-4xl text-white font-normal mb-4">
+          <p className="font-sans text-2xl sm:text-3xl md:text-4xl text-white font-normal mb-4">
             {sinceText}
           </p>
 
-          <p className="font-sans font-light text-sm sm:text-base text-white/90">
+          <p className="font-sans text-sm sm:text-base md:text-lg text-white/90">
             {signText}
           </p>
         </div>

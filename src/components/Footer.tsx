@@ -151,10 +151,10 @@ export const Footer: React.FC<FooterProps> = ({ data }) => {
         </nav> */}
 
         {copyrightText && (
-          <p className="text-white text-center mb-3 mt-5">{copyrightText}</p>
+          <p className="text-white text-center mb-3 mt-5 font-sans">{copyrightText}</p>
         )}
         {designedByText && (
-          <p className="text-white text-center mb-6">{designedByText}</p>
+          <p className="text-white text-center mb-6 font-sans">{designedByText}</p>
         )}
       </div>
     </footer>
