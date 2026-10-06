@@ -39,7 +39,7 @@ export const HistoriaBlock: React.FC<HistoriaBlockProps> = ({
   return (
     <section
       id="historia"
-      className="relative bg-[#1e0101] py-16 md:py-24 overflow-hidden flex items-center min-h-[500px] md:min-h-[700px]"
+      className="relative bg-[#350903] py-16 md:py-24 overflow-hidden flex items-center min-h-[500px] md:min-h-[700px]"
     >
       {/* Pattern repeat watermark background */}
       {/* <div className="absolute inset-0 bg-eagle-pattern opacity-40 pointer-events-none z-0" /> */}
