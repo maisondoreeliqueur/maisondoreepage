@@ -5,6 +5,7 @@ import { SaintManichoBlock, TwoColBlock } from './blocks/SaintManichoBlock'
 import { HistoriaBlock } from './blocks/HistoriaBlock'
 import { DondeEncontrarnosBlock } from './blocks/DondeEncontrarnosBlock'
 import { ContactoBlock } from './blocks/ContactoBlock'
+import { Separator } from './Separator'
 
 interface BlockData {
   blockType: string
@@ -43,6 +44,9 @@ export const BlockRenderer: React.FC<BlockRendererProps> = ({ blocks, flavors })
             return <DondeEncontrarnosBlock key={block.id || index} {...block} />
           case 'contactoBlock':
             return <ContactoBlock key={block.id || index} {...block} />
+          case 'separatorBlock':
+          case 'separator':
+            return <Separator key={block.id || index} {...block} />
           default:
             return null
         }

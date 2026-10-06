@@ -44,7 +44,7 @@ export const TwoColBlock: React.FC<TwoColBlockProps> = ({
     const isSingle = columns.length === 1
 
     return (
-      <section className="w-full bg-[#240403] overflow-hidden">
+      <section className="w-full bg-[#350903] overflow-hidden">
         <div
           className={`w-full grid grid-cols-1 ${
             isSingle ? 'max-w-4xl mx-auto' : 'md:grid-cols-2'
@@ -176,7 +176,7 @@ export const TwoColBlock: React.FC<TwoColBlockProps> = ({
 
   // Fallback: Original Saint Manicho dual-image layout
   return (
-    <section className="w-full grid grid-cols-1 md:grid-cols-2 overflow-hidden bg-[#240403]">
+    <section className="w-full grid grid-cols-1 md:grid-cols-2 overflow-hidden bg-[#350903]">
       <div className="w-full h-full flex items-center justify-center overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img

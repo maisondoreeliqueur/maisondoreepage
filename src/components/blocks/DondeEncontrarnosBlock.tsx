@@ -30,7 +30,7 @@ export const DondeEncontrarnosBlock: React.FC<DondeEncontrarnosBlockProps> = ({
   return (
     <section
       id="donde"
-      className="relative bg-[#4a110b] pb-16 pt-16 md:pb-28 md:pb-28 overflow-hidden"
+      className="relative bg-[#3509003] pb-16 pt-16 md:pb-28 md:pb-28 overflow-hidden"
     >
       {/* Top decorative line pattern */}
       {/* <div className="h-20 md:h-32 bg-eagle-repeat-x opacity-15 mb-10 md:mb-16" /> */}

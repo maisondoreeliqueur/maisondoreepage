@@ -63,7 +63,7 @@ export const ContactoBlock: React.FC<ContactoBlockProps> = ({
   return (
     <section
       id="contacto"
-      className="relative bg-[#240403] overflow-hidden pt-[clamp(56px,8vw,100px)] pb-0"
+      className="relative bg-[#350903] overflow-hidden pt-[clamp(56px,8vw,100px)] pb-0"
     >
       {/* Pattern background */}
       {/* <div

@@ -50,9 +50,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 h-[clamp(88px,9vw,120px)] bg-[#390604] transition-shadow duration-300 flex items-center px-4 md:px-8 ${
-        isScrolled ? 'shadow-2xl shadow-black/40' : ''
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 h-[clamp(88px,9vw,120px)] bg-transparent transition-colors duration-300 flex items-center px-4 md:px-8"
     >
       <nav className="w-full max-w-[1320px] mx-auto flex items-center justify-between relative">
         {/* Left Nav Links (Desktop) */}
@@ -140,7 +138,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
 
         {/* Mobile Menu Dropdown */}
         {isOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-[#390604] shadow-2xl py-6 flex flex-col items-center gap-4 text-white font-sans text-lg md:text-xl tracking-wider text-center border-t border-white/10">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-[#350903]/95 backdrop-blur-md shadow-2xl py-6 flex flex-col items-center gap-4 text-white font-sans text-lg md:text-xl tracking-wider text-center border-t border-white/10">
             {navLinksLeft.concat(navLinksRight).map((link, idx) => (
               <Link
                 key={idx}

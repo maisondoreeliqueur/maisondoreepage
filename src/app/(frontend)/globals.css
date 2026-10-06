@@ -11,7 +11,7 @@
   --color-maroon-top: #390604;
   --color-maroon: #4a110b;
   --color-maroon-glow: #6b3018;
-  --color-maroon-deep: #240403;
+  --color-maroon-deep: #350903;
   --color-cream: #ffffff;
   --color-cream-soft: #ffffff;
   --color-beige: #e9dcc6;
@@ -32,10 +32,10 @@
 
   body {
     margin: 0;
-    padding-top: var(--header-h);
+    /* padding-top: var(--header-h); */
     font-family: var(--font-serif);
     color: #ffffff;
-    background: #240403;
+    background: #350903;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }

@@ -42,7 +42,7 @@ export const HistoriaBlock: React.FC<HistoriaBlockProps> = ({
       className="relative bg-[#1e0101] py-16 md:py-24 overflow-hidden flex items-center min-h-[500px] md:min-h-[700px]"
     >
       {/* Pattern repeat watermark background */}
-      <div className="absolute inset-0 bg-eagle-pattern opacity-40 pointer-events-none z-0" />
+      {/* <div className="absolute inset-0 bg-eagle-pattern opacity-40 pointer-events-none z-0" /> */}
 
       {/* Left Eagle Tint */}
       <div className="eagle-watermark-left hidden md:block" />

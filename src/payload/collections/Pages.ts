@@ -6,6 +6,7 @@ import { SaintManichoBlock } from '../blocks/SaintManichoBlock'
 import { HistoriaBlock } from '../blocks/HistoriaBlock'
 import { DondeEncontrarnosBlock } from '../blocks/DondeEncontrarnosBlock'
 import { ContactoBlock } from '../blocks/ContactoBlock'
+import { SeparatorBlock } from '../blocks/SeparatorBlock'
 
 export const Pages: CollectionConfig = {
   slug: 'pages',
@@ -49,6 +50,7 @@ export const Pages: CollectionConfig = {
         HistoriaBlock,
         DondeEncontrarnosBlock,
         ContactoBlock,
+        SeparatorBlock,
       ],
     },
   ],

@@ -256,6 +256,19 @@ export interface Page {
             blockName?: string | null;
             blockType: 'contactoBlock';
           }
+        | {
+            /**
+             * Altura del espacio en píxeles para pantallas de escritorio.
+             */
+            desktopSpace: number;
+            /**
+             * Altura del espacio en píxeles para móviles. Si se deja vacío, usará el mismo espacio que desktop.
+             */
+            mobileSpace?: number | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'separatorBlock';
+          }
       )[]
     | null;
   updatedAt: string;
@@ -573,6 +586,14 @@ export interface PagesSelect<T extends boolean = true> {
               formAction?: T;
               subject?: T;
               submitText?: T;
+              id?: T;
+              blockName?: T;
+            };
+        separatorBlock?:
+          | T
+          | {
+              desktopSpace?: T;
+              mobileSpace?: T;
               id?: T;
               blockName?: T;
             };

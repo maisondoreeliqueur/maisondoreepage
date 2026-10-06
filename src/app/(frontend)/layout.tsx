@@ -130,7 +130,7 @@ export default async function RootLayout({
       suppressHydrationWarning
       className={`${caprasimo.variable} ${quintessential.variable} ${charisSIL.variable} ${montserrat.variable} ${archivoNarrow.variable} ${italianno.variable}`}
     >
-      <body suppressHydrationWarning className="antialiased min-h-screen flex flex-col bg-[#240403] text-white">
+      <body suppressHydrationWarning className="antialiased min-h-screen flex flex-col bg-[#350903] text-white">
         <AgeGateModal
           enabled={isAgeGateEnabled}
           title={siteSettingsData?.ageGateTitle}
